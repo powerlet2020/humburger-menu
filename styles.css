@@ -6,18 +6,79 @@
     font-family: sans-serif;
 }
 
+body{
+    background: rgb(146, 226, 241);
+}
+
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem  3rem;
+    padding: 1.5rem  2.5rem;
     background-color: dodgerblue;
     position: relative;
     color: #fff;
+    height: 70px;
+    
+}
+.logo{
+    font-size: 3rem;
 }
 
 nav ul li{
     display:inline-block;
     list-style: none;
     color: #fff;
+    padding: 0 0.5rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a:hover{
+   text-decoration: underline  rgba(229, 229, 235, 0.5);
+}
+
+.menu-icon i{
+    color: #fff;
+    font-size: 1.5rem;
+    
+}
+
+.menu-icon i{
+   display: none;
+}
+
+.menu-icon{
+    display: none;
+}
+
+
+
+@media(max-width:600px){
+
+    nav ul{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        background: dodgerblue;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+    }
+    .menu-icon i{
+        display: block;
+     }
+
+     .menu-icon{
+        display: block;
+    }
+    .menulist{
+        transition:all 0.5s ;
+    }
 }
