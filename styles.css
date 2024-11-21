@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem  3rem;
+    background-color: dodgerblue;
+    position: relative;
+    color: #fff;
+}
+
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    color: #fff;
+}
